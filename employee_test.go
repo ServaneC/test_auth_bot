@@ -48,8 +48,8 @@ func NewTestCompany() Company {
 }
 
 func linuxTorvalds() Employee {
-	return Employee{"Linus", "Torvalds", time.Date(1969, time.December, 28, 0, 0, 0, 0, time.UTC), time.Date(2022, time.January, 01, 0, 0, 0, 0, time.UTC), "not-set"}
-}
+	return Employee{"Linu", "Torvalds", time.Date(1969, time.December, 28, 0, 0, 0, 0, time.UTC), time.Date(2022, time.January, 01, 0, 0, 0, 0, time.UTC), "not-set"}
+}//THIS TEST IS BROKEN,REPLACE "LINU" WITH "LINUS"
 
 func linuxTorvaldsWithId() Employee {
 	linus := linuxTorvalds()
