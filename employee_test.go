@@ -25,6 +25,11 @@ func TestEnrollEmployeeShouldReturnFullEmployeeWithId(t *testing.T) {
 	assert.Equal(t, linuxTorvaldsWithId(), company.Enroll(linuxTorvalds()))
 }
 
+//THIS IS A STUPID BROKEN TEST
+func TestEnrollEmployeeShouldReturnFullEmployeeWithId(t *testing.T) {
+	assert.Equal(t, "bad test", "lalalalala")
+}
+
 func TestDismissEmployeeShouldRemoveEmployeeFromCompany(t *testing.T) {
 	company := NewTestCompany()
 	company.Enroll(linuxTorvalds())
@@ -48,8 +53,8 @@ func NewTestCompany() Company {
 }
 
 func linuxTorvalds() Employee {
-	return Employee{"Linu", "Torvalds", time.Date(1969, time.December, 28, 0, 0, 0, 0, time.UTC), time.Date(2022, time.January, 01, 0, 0, 0, 0, time.UTC), "not-set"}
-}//THIS TEST IS BROKEN,REPLACE "LINU" WITH "LINUS"
+	return Employee{"Linus", "Torvalds", time.Date(1969, time.December, 28, 0, 0, 0, 0, time.UTC), time.Date(2022, time.January, 01, 0, 0, 0, 0, time.UTC), "not-set"}
+
 
 func linuxTorvaldsWithId() Employee {
 	linus := linuxTorvalds()
