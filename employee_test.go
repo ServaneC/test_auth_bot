@@ -26,9 +26,9 @@ func TestEnrollEmployeeShouldReturnFullEmployeeWithId(t *testing.T) {
 }
 
 //THIS IS A STUPID BROKEN TEST
-func TestEnrollEmployeeShouldReturnFullEmployeeWithId(t *testing.T) {
-	assert.Equal(t, "bad test", "lalalalala")
-}
+//func TestEnrollEmployeeShouldReturnFullEmployeeWithId(t *testing.T) {
+//	assert.Equal(t, "bad test", "lalalalala")
+//}
 
 func TestDismissEmployeeShouldRemoveEmployeeFromCompany(t *testing.T) {
 	company := NewTestCompany()
